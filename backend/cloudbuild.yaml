@@ -59,7 +59,9 @@ steps:
         '--image', '${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO_NAME}/${_IMAGE}:$COMMIT_SHA',
         '--platform', 'managed',
         '--region', '${_REGION}',
-        '--allow-unauthenticated'
+        '--allow-unauthenticated',
+        # ADDED ENV VARS HERE. Note the port change to 6543!
+        '--set-env-vars', 'DATABASE_URL=postgresql://postgres:hrms-lite03@db.cwxauwtoaaabphabeydx.supabase.co:6543/postgres,ADMIN_PASSWORD=admin123'
       ]
     id: 'deploy'
     wait_for: ['push']

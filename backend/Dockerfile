@@ -17,4 +17,4 @@ COPY . ./
 
 # Run the web service on container startup using Uvicorn
 # The PORT environment variable is injected by Cloud Run
-CMD exec uvicorn main:app --host 0.0.0.0 --port ${PORT:-8080}
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
