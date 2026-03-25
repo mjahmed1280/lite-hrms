@@ -2,7 +2,7 @@ import os
 from fastapi import FastAPI, Depends, HTTPException, Header, status
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
-from . import models, schemas, database
+import models, schemas, database
 
 # creates tables if they dont exist
 try:

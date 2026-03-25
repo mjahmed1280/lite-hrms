@@ -1,7 +1,7 @@
 import uuid
 from sqlalchemy import Column, String, Date, ForeignKey, UniqueConstraint
 from sqlalchemy.dialects.postgresql import UUID
-from .database import Base
+from database import Base
 
 class Employee(Base):
     __tablename__ = "employees"
