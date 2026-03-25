@@ -7,7 +7,7 @@ A streamlined Human Resource Management System for lightning-fast employee manag
 | | Link |
 |---|---|
 | **Frontend** | https://lite-hrms-psi.vercel.app/  |
-| **Backend API** (hosted on GCP Clour run) | https://lite-hrms-backend-1033451712585.asia-south1.run.app |
+| **Backend API** (hosted on GCP Cloud run) | https://lite-hrms-backend-1033451712585.asia-south1.run.app |
 | **API Docs (Swagger)** | https://lite-hrms-backend-1033451712585.asia-south1.run.app/docs |
 | **GitHub** | https://github.com/mjahmed1280/lite-hrms |
 

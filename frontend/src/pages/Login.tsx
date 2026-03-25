@@ -38,7 +38,7 @@ export default function Login({ onLogin }: { onLogin: (pass: string) => void }) 
             Hello<br />LiteHRMS! 👋
           </h2>
           <p className="text-blue-200 text-sm leading-relaxed max-w-xs">
-            A streamlined HR system for lightning-fast employee management and role-based data handling.
+            A lightweight HR Management System for managing employee records and daily attendance. .
           </p>
         </div>
 
