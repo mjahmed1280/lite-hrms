@@ -60,8 +60,9 @@ steps:
         '--platform', 'managed',
         '--region', '${_REGION}',
         '--allow-unauthenticated',
-        # Replaced --set-env-vars with --set-secrets
-        # Format: ENV_VAR_NAME=SECRET_NAME:VERSION
+        # clean old values
+        '--remove-env-vars', 'DATABASE_URL,ADMIN_PASSWORD',
+        # pull from secret manager
         '--set-secrets', 'DATABASE_URL=DATABASE_URL:latest,ADMIN_PASSWORD=ADMIN_PASSWORD:latest'
       ]
     id: 'deploy'
