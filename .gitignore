@@ -3,5 +3,6 @@ __pycache__/
 .env
 .DS_Store
 node_modules/
-*.txt
+req.txt
+cmd.txt
 teck-stack.md
